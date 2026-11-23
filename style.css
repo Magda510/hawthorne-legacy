@@ -3,3 +3,18 @@
 @media(max-width:1200px){.skill-catalog{grid-template-columns:repeat(2,1fr)}.main{padding:30px 27px 70px}.layout{grid-template-columns:230px minmax(0,1fr)}.stats-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:860px){.layout{display:block}.sidebar{border-right:0;border-bottom:1px solid var(--line);padding:14px 17px}.side-heading,.side-bottom{display:none}.side-nav{flex-direction:row;overflow:auto;gap:3px;padding-bottom:4px}.side-nav button{min-width:max-content;padding:0 10px;min-height:39px}.side-nav button>span{font-size:16px;width:15px}.site-header{padding:18px 19px}.site-header h1{font-size:28px}.brand-emblem{width:51px;height:51px;font-size:29px}.main{padding:25px 19px 60px}.top-strip{padding:6px 17px}.header-actions .small-btn{display:none}.hero-panel{grid-template-columns:1fr}.hero-right{display:none}.chapter-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:580px){.site-header{gap:10px}.brand-emblem{display:none}.brand-kicker{font-size:9px}.site-header h1{font-size:24px}.brand-subtitle{font-size:10px}.header-actions .pill-btn{padding:7px 9px;font-size:11px}.chapter-grid,.grid-two,.grid-three,.skill-catalog,.record-grid,.help-grid{grid-template-columns:1fr}.stats-grid{gap:8px}.stat-card{padding:13px}.stat-value{font-size:26px}.detail-facts{grid-template-columns:1fr}.world-hero h2{font-size:33px}.world-hero{padding:20px}.hero-panel{padding:23px}.form-grid{grid-template-columns:1fr}.form-grid .wide{grid-column:auto}.icon-browser{grid-template-columns:repeat(5,1fr)}.chapter-card{min-height:110px}.header-actions{flex-shrink:0}.top-strip span:first-child{letter-spacing:.7px}.top-strip #autosave{font-size:9px}}
+
+/* v5: editable botanical heir-name tradition */
+.chapter-card .chapter-names{font-size:12px;font-family:Georgia,serif;color:#9a6c76;margin-top:5px;font-style:italic}
+.heir-naming-panel{margin-bottom:16px}
+.heir-naming-panel>p{margin:0 0 13px;font-size:13px}
+.heir-name-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.heir-name-options>div{background:#fbf7f2;border:1px solid #ebdfd3;border-radius:12px;padding:12px 15px;display:flex;flex-direction:column;gap:4px}
+.heir-name-options span{font-size:10px;text-transform:uppercase;letter-spacing:1.3px;color:#8c7c70}
+.heir-name-options strong{font:23px Georgia,serif;color:#5e514f}
+.chapter-number{border:1px solid rgba(48,39,40,.15)}
+.chapter-tabs button.selected{color:#253328}
+.chapter-tabs button.selected[style*="#292932"]{color:#ffffff}
+body[data-theme="night"] .heir-name-options>div{background:#303c34;border-color:#506050}
+body[data-theme="night"] .heir-name-options strong{color:#eef4e8}
+@media(max-width:580px){.heir-name-options{grid-template-columns:1fr}}

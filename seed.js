@@ -1,5 +1,5 @@
 window.INITIAL_HAWTHORNE = {
- "version": 4,
+ "version": 5,
  "settings": {
   "title": "The Hawthorne Legacy",
   "subtitle": "Ten generations. One extraordinary family.",
@@ -17,7 +17,7 @@ window.INITIAL_HAWTHORNE = {
    "No gameplay money or skill cheats; building and bug-fix exceptions allowed.",
    "Legitimate marriage money and inheritance are allowed, but never replace personal goals.",
    "Every protagonist has at least one flawed personality trait.",
-   "Firstborn names are botanical; secondborn names are gem or mineral-inspired.",
+   "Firstborn names follow the generation color using flowers or botanical names; select the girl/boy suggestion or customize it. Secondborn names are gem or mineral-inspired.",
    "Preserve one physical heirloom per generation in a traveling storage box.",
    "Fates should be kept once drawn. Do not force tragedies that did not happen."
   ]
@@ -178,7 +178,9 @@ window.INITIAL_HAWTHORNE = {
    "home": "",
    "householdFunds": "",
    "simDay": "",
-   "completed": false
+   "completed": false,
+   "girlName": "Ivy",
+   "boyName": ""
   },
   {
    "id": 2,
@@ -279,7 +281,9 @@ window.INITIAL_HAWTHORNE = {
    "home": "",
    "householdFunds": "",
    "simDay": "",
-   "completed": false
+   "completed": false,
+   "girlName": "Primrose",
+   "boyName": ""
   },
   {
    "id": 3,
@@ -374,7 +378,9 @@ window.INITIAL_HAWTHORNE = {
    "home": "",
    "householdFunds": "",
    "simDay": "",
-   "completed": false
+   "completed": false,
+   "girlName": "Rose",
+   "boyName": "Adonis"
   },
   {
    "id": 4,
@@ -475,7 +481,9 @@ window.INITIAL_HAWTHORNE = {
    "home": "",
    "householdFunds": "",
    "simDay": "",
-   "completed": false
+   "completed": false,
+   "girlName": "Lobelia",
+   "boyName": "Aster"
   },
   {
    "id": 5,
@@ -570,7 +578,9 @@ window.INITIAL_HAWTHORNE = {
    "home": "",
    "householdFunds": "",
    "simDay": "",
-   "completed": false
+   "completed": false,
+   "girlName": "Daphne",
+   "boyName": "William"
   },
   {
    "id": 6,
@@ -665,7 +675,9 @@ window.INITIAL_HAWTHORNE = {
    "home": "",
    "householdFunds": "",
    "simDay": "",
-   "completed": false
+   "completed": false,
+   "girlName": "Iris",
+   "boyName": "Hyacinthe"
   },
   {
    "id": 7,
@@ -760,7 +772,9 @@ window.INITIAL_HAWTHORNE = {
    "home": "",
    "householdFunds": "",
    "simDay": "",
-   "completed": false
+   "completed": false,
+   "girlName": "Ixia",
+   "boyName": "Juniper"
   },
   {
    "id": 8,
@@ -855,14 +869,16 @@ window.INITIAL_HAWTHORNE = {
    "home": "",
    "householdFunds": "",
    "simDay": "",
-   "completed": false
+   "completed": false,
+   "girlName": "Hazel",
+   "boyName": "Cedar"
   },
   {
    "id": 9,
    "name": "",
    "title": "The Visionary",
    "world": "Evergreen Harbor",
-   "color": "#8DA66B",
+   "color": "#EEEDE9",
    "subtitle": "Community • ecology • invention",
    "story": "Turn family resources toward ecological renewal. Success is measured by genuine community changes, not merely acquiring a green mansion.",
    "aspiration": "Eco Innovator / editable",
@@ -950,14 +966,16 @@ window.INITIAL_HAWTHORNE = {
    "home": "",
    "householdFunds": "",
    "simDay": "",
-   "completed": false
+   "completed": false,
+   "girlName": "Daisy-Lys",
+   "boyName": "Narcisse"
   },
   {
    "id": 10,
    "name": "",
    "title": "The Final Heir",
    "world": "San Sequoia",
-   "color": "#B5A0D9",
+   "color": "#292932",
    "subtitle": "Home • reunion • legacy",
    "story": "The final descendant reckons with everything the family created: the triumphs, scandals, tragedies, and acts of love.",
    "aspiration": "Big Happy Family / editable",
@@ -1051,7 +1069,9 @@ window.INITIAL_HAWTHORNE = {
    "home": "",
    "householdFunds": "",
    "simDay": "",
-   "completed": false
+   "completed": false,
+   "girlName": "Calla-Lily",
+   "boyName": "Cosmo"
   }
  ],
  "people": [

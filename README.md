@@ -1,4 +1,4 @@
-# The Hawthorne Legacy — Dynasty Studio (v4)
+# The Hawthorne Legacy — Dynasty Studio (v5)
 
 An offline-first Sims 4 dynasty/challenge tracker with an editable storybook design. **All ten generations are available from the beginning.** You do not need to contact the creator to change a story, trait, objective, randomizer, skill target, challenge rule, or color.
 
@@ -54,3 +54,18 @@ The studio starts with the user-reported Ivy Hawthorne history: Primrose (shy fi
 - The Sims Wiki's skill image category: https://sims.fandom.com/wiki/Category:Skill_icons
 
 **Fan-made, unofficial project.** The Sims™ 4 and its visual assets belong to Electronic Arts and its licensors. The SimKid pictograms were supplied by the user. No external fonts, APIs or runtime dependencies.
+
+## Flower-coded heir names (v5)
+
+Every generation now displays **editable girl / boy botanical name suggestions** in its chapter page. Edit the two fields from **Generations → Edit chapter**. These suggestions do not automatically rename an existing born heir (Ivy and Primrose remain themselves). Gen 9 is white and Gen 10 is black. Existing v4 browser saves are upgraded **without overwriting** family members, goals, or other progress; default olive/lavender Gen 9/10 colors migrate to white/black. Export a backup before updating as a precaution.
+
+- 1. The Pioneer — Ivy / (already named) — #91AD89
+- 2. The Golden Child — Primrose / (already named) — #D9B655
+- 3. The Wildcard — Rose / Adonis — #BA5364
+- 4. The Homesteader — Lobelia / Aster — #91C5DA
+- 5. The Starlet — Daphne / William — #E6A0B9
+- 6. The Scholar — Iris / Hyacinthe — #A58ACB
+- 7. The Entrepreneur — Ixia / Juniper — #59ADA5
+- 8. The Storyteller — Hazel / Cedar — #A17B69
+- 9. The Visionary — Daisy-Lys / Narcisse — #EEEDE9
+- 10. The Final Heir — Calla-Lily / Cosmo — #292932
