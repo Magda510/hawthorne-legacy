@@ -1,26 +1,37 @@
 {
-  "version": 5,
+  "version": 6,
   "settings": {
     "title": "The Hawthorne Legacy",
     "subtitle": "Ten generations. One extraordinary family.",
     "seasonDays": 14,
     "pregnancyDays": 9,
-    "lifespan": "Long",
-    "strictOneSim": true,
+    "lifespan": "Custom",
+    "strictOneSim": false,
     "theme": "storybook",
     "startMoney": "§0",
     "customRules": [
       "Firstborn biological child inherits the dynasty, regardless of gender. Biological male–female reproduction is required for succession under these house rules.",
-      "Control only the current protagonist. Household autonomy stays enabled.",
-      "Transfer active control when the firstborn becomes a young adult.",
+      "Only control the current protagonist in ordinary life. Children may be controlled during school camps, holidays, sleepovers, and formative adventures; no grinding skills, grades, or friendships. Household autonomy stays enabled.",
+      "Transfer primary control to the firstborn at young adulthood. Childhood story-trip control does not trigger succession.",
       "Each generation moves to its assigned world.",
       "No gameplay money or skill cheats; building and bug-fix exceptions allowed.",
       "Legitimate marriage money and inheritance are allowed, but never replace personal goals.",
       "Every protagonist has at least one flawed personality trait.",
       "Firstborn names follow the generation color using flowers or botanical names; select the girl/boy suggestion or customize it. Secondborn names are gem or mineral-inspired.",
       "Preserve one physical heirloom per generation in a traveling storage box.",
-      "Fates should be kept once drawn. Do not force tragedies that did not happen."
-    ]
+      "Fates should be kept once drawn. Do not force tragedies that did not happen. Record unforeseen relationship drama and let consequences emerge."
+    ],
+    "childControlMode": "Story trips & formative events only",
+    "lifeStages": {
+      "Newborn": 1,
+      "Infant": 5,
+      "Toddler": 7,
+      "Child": 21,
+      "Teen": 21,
+      "Young Adult": 40,
+      "Adult": 35,
+      "Elder": 20
+    }
   },
   "activeGeneration": 1,
   "selectedGeneration": 1,
@@ -32,7 +43,7 @@
       "world": "Henford-on-Bagley",
       "color": "#91AD89",
       "subtitle": "Roots • perseverance • rural life",
-      "story": "Begin with §0 on an empty lot. Build a self-sufficient cottage and cultivate a garden without compromising the challenge rules. Ivy married Redmond Red, a former noble transformed from a frog, and has a daughter, Primrose, with Father Winter.",
+      "story": "Ivy began with §0, built a botanical homestead, and had Primrose with Father Winter despite contraception. After kissing an enchanted frog, she married Redmond Red, a retired noble who brought substantial wealth and loved Primrose. Later Ivy reciprocated Father Winter’s flirting in front of Redmond; arguments followed, Ivy requested a divorce, and Redmond left the house heartbroken. Her next chapter is unwritten.",
       "aspiration": "Freelance Botanist",
       "traits": "Loner · Loves Outdoors · Ambitious",
       "career": "Self-employed botanist",
@@ -189,7 +200,7 @@
       "world": "Windenburg",
       "color": "#D9B655",
       "subtitle": "Prestige • expectation • belonging",
-      "story": "Primrose grows up wealthy, with a shy infant temperament, loving stepfather Redmond Red, and Father Winter as her biological father. Her future personality is not predetermined.",
+      "story": "Primrose is Ivy and Father Winter’s biological daughter. Shy as an infant, she was loved by Father Winter and by her former stepfather Redmond Red. Her childhood now includes her mother’s divorce from Redmond; what Primrose feels or chooses later is for gameplay to decide. She is the Golden Child of Windenburg.",
       "aspiration": "Successful Lineage / editable",
       "traits": "Shy (infant trait); later traits randomized",
       "career": "",
@@ -1081,9 +1092,9 @@
       "generation": 1,
       "role": "Founder",
       "parents": "",
-      "relationship": "Protagonist",
+      "relationship": "Founder; ex-wife of Redmond Red",
       "traits": "Loner, Loves Outdoors, Ambitious",
-      "notes": "Founder of the Hawthorne farm. Married Redmond Red. Primrose’s mother.",
+      "notes": "Founder of the Hawthorne farm. Divorced Redmond Red after flirting with Father Winter; she appeared relieved/happy about the divorce. Biological mother of Primrose.",
       "photo": ""
     },
     {
@@ -1094,18 +1105,18 @@
       "parents": "Ivy Hawthorne & Father Winter",
       "relationship": "Daughter",
       "traits": "Shy (infant); Father Winter’s Baby if recognized in game",
-      "notes": "Biological daughter of Father Winter, stepdaughter of Redmond Red.",
+      "notes": "Daughter of Ivy and Father Winter. Shy infant. Redmond Red lovingly raised her as stepfather before the divorce; his future involvement is unknown.",
       "photo": ""
     },
     {
       "id": "p-redmond",
       "name": "Redmond Red",
       "generation": 1,
-      "role": "Spouse / stepfather",
+      "role": "Former spouse / former stepfather",
       "parents": "",
-      "relationship": "Ivy’s husband",
+      "relationship": "Ivy’s ex-husband; former stepfather of Primrose",
       "traits": "",
-      "notes": "Once a frog noble. Retired from the noble career, married Ivy, gets along with Primrose.",
+      "notes": "A frog transformed by Ivy’s kiss; a retired noble who brought considerable money to the farm and bonded with Primrose. After Ivy flirted with Father Winter, the marriage deteriorated. Ivy divorced him and he left the household heartbroken. His new home, settlement and future contact with Primrose are unknown.",
       "photo": ""
     },
     {
@@ -1114,9 +1125,9 @@
       "generation": 1,
       "role": "Biological father of Primrose",
       "parents": "",
-      "relationship": "Ivy’s former romantic partner",
+      "relationship": "Primrose’s father; Ivy’s romantic interest",
       "traits": "",
-      "notes": "Loves his daughter Primrose.",
+      "notes": "Biological father of Primrose who loves her. Flirted with Ivy while Redmond was at home, triggering an argument that led to divorce.",
       "photo": ""
     }
   ],
@@ -1142,6 +1153,20 @@
       "day": "",
       "title": "An unwelcome visitor",
       "body": "Tom Peeping repeatedly invaded Ivy’s privacy and was killed in a modded gameplay incident."
+    },
+    {
+      "id": "j-marriage-wealth",
+      "generation": 1,
+      "day": "",
+      "title": "The frog prince’s fortune",
+      "body": "After Ivy and Redmond Red married, Redmond brought substantial wealth to the Hawthorne farm. The money was acquired through normal gameplay, but Ivy still has to fulfill her personal botanical goals."
+    },
+    {
+      "id": "j-divorce-redmond",
+      "generation": 1,
+      "day": "",
+      "title": "The fall of the frog prince",
+      "body": "Father Winter came to the house and flirted with Ivy. She accepted and flirted back while her husband Redmond Red was present. Redmond was upset. Their attempts to talk escalated into repeated arguments. Ivy requested a divorce; Redmond left the house heartbroken and without a home. Ivy appeared happy or relieved at the divorce. Any future reconciliation, settlement or parenting arrangement is undecided."
     }
   ],
   "quests": [
@@ -1338,5 +1363,157 @@
   "icons": {},
   "iconPicks": {},
   "legacyImport": false,
-  "lastDraws": {}
+  "lastDraws": {},
+  "relationships": [
+    {
+      "id": "r-ivy-redmond",
+      "generation": 1,
+      "personA": "Ivy Hawthorne",
+      "personB": "Redmond Red",
+      "kind": "Divorced",
+      "status": "Separated; no reconciliation arranged",
+      "notes": "Former married couple. Redmond left the family farm after Ivy flirted with Father Winter in front of him.",
+      "day": ""
+    },
+    {
+      "id": "r-redmond-primrose",
+      "generation": 1,
+      "personA": "Redmond Red",
+      "personB": "Primrose Hawthorne",
+      "kind": "Former stepfather and stepdaughter",
+      "status": "Fond relationship; current contact unknown",
+      "notes": "Redmond cared for Primrose and got along with her before the divorce. Do not assume he disappears from her life.",
+      "day": ""
+    },
+    {
+      "id": "r-winter-primrose",
+      "generation": 1,
+      "personA": "Father Winter",
+      "personB": "Primrose Hawthorne",
+      "kind": "Biological father and daughter",
+      "status": "Loving",
+      "notes": "Father Winter loves his daughter. Check the Father Winter’s Baby trait in game rather than adding supernatural powers.",
+      "day": ""
+    },
+    {
+      "id": "r-ivy-winter",
+      "generation": 1,
+      "personA": "Ivy Hawthorne",
+      "personB": "Father Winter",
+      "kind": "Biological co-parents; romantic involvement",
+      "status": "Flirted again during Ivy’s marriage",
+      "notes": "Their subsequent relationship status should be determined in gameplay, not presumed.",
+      "day": ""
+    }
+  ],
+  "wealthEvents": [
+    {
+      "id": "w-redmond-marriage",
+      "generation": 1,
+      "title": "Redmond’s marriage contribution",
+      "amount": "",
+      "source": "Marriage / household funds",
+      "recipient": "Hawthorne household",
+      "status": "Received",
+      "notes": "Significant amount, exact figure not recorded."
+    },
+    {
+      "id": "w-redmond-divorce",
+      "generation": 1,
+      "title": "Possible divorce settlement",
+      "amount": "",
+      "source": "Divorce / asset division",
+      "recipient": "Redmond Red",
+      "status": "Unresolved",
+      "notes": "The game moved Redmond out of the household. Do not fabricate a payout or housing arrangement."
+    }
+  ],
+  "trips": [
+    {
+      "id": "t-spring",
+      "generation": 2,
+      "season": "Spring",
+      "name": "Classe verte · nature school",
+      "location": "Woodland field station / botanical garden",
+      "duration": "3–4",
+      "status": "Idea",
+      "day": "",
+      "traveler": "Primrose Hawthorne",
+      "activities": "Forest exploration, insect observation, art and nature journals, a friendship made away from home.",
+      "notes": "Custom Getaway: not a pre-made official trip."
+    },
+    {
+      "id": "t-summer",
+      "generation": 2,
+      "season": "Summer",
+      "name": "Summer camp",
+      "location": "Camp Gibbi Gibbi / custom camp",
+      "duration": "5–7",
+      "status": "Idea",
+      "day": "",
+      "traveler": "Primrose Hawthorne",
+      "activities": "Swimming, games, campfires, friendships, counselors and independent decisions.",
+      "notes": "Custom Getaway."
+    },
+    {
+      "id": "t-autumn",
+      "generation": 2,
+      "season": "Autumn",
+      "name": "Harvest & heritage school",
+      "location": "Henford-on-Bagley / rural heritage village",
+      "duration": "3–4",
+      "status": "Idea",
+      "day": "",
+      "traveler": "Primrose Hawthorne",
+      "activities": "Harvest, local history, farm animals, seasonal cooking and storytelling.",
+      "notes": "Alternative: mystery and folklore camp in Ravenwood."
+    },
+    {
+      "id": "t-winter",
+      "generation": 2,
+      "season": "Winter",
+      "name": "Classe de neige",
+      "location": "Mt. Komorebi",
+      "duration": "4–5",
+      "status": "Idea",
+      "day": "",
+      "traveler": "Primrose Hawthorne",
+      "activities": "Snow activities, sledding, lodge evenings, excursions and winter friendships.",
+      "notes": "Custom Getaway. Activities depend on owned packs and child access."
+    }
+  ],
+  "storyHooks": [
+    {
+      "id": "hook-redmond",
+      "generation": 1,
+      "title": "Redmond’s next chapter",
+      "status": "Open",
+      "description": "Give Redmond a future determined by gameplay: separate home, possible settlement, continued contact with Primrose, new relationship, or no reconciliation. Do not assume outcome.",
+      "notes": ""
+    },
+    {
+      "id": "hook-primrose",
+      "generation": 2,
+      "title": "The shy Golden Child",
+      "status": "Open",
+      "description": "Primrose is shy and grows up wealthy with family expectations, two loving father figures, and her mother’s divorce. Her own traits and experiences should define her story.",
+      "notes": ""
+    },
+    {
+      "id": "hook-wildcard",
+      "generation": 3,
+      "title": "Wildcard — choose a dark path",
+      "status": "Idea",
+      "description": "Possible villain routes: cold recluse killer / dark horror; corrupt nightlife boss, gangs and drugs; or a violent, self-sabotaging failure. Keep routes optional until Generation III emerges naturally.",
+      "notes": "Mature modded gameplay, not mandatory objectives."
+    },
+    {
+      "id": "hook-ranch",
+      "generation": 4,
+      "title": "Why the Wildcard’s heir chooses a ranch",
+      "status": "Idea",
+      "description": "Possible motivations: escape from a criminal parent; use inherited wealth to start an honest estate; or genuine love of horses despite admiring the parent. Choose based on the child’s autonomous history.",
+      "notes": ""
+    }
+  ]
 }

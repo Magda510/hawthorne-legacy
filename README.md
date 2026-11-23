@@ -1,4 +1,4 @@
-# The Hawthorne Legacy — Dynasty Studio (v5)
+# The Hawthorne Legacy — Dynasty Studio (v6)
 
 An offline-first Sims 4 dynasty/challenge tracker with an editable storybook design. **All ten generations are available from the beginning.** You do not need to contact the creator to change a story, trait, objective, randomizer, skill target, challenge rule, or color.
 
@@ -8,6 +8,16 @@ An offline-first Sims 4 dynasty/challenge tracker with an editable storybook des
 2. Double-click **`index.html`**. The site works without an internet connection.
 3. For more reliable saving across browsers, on **Windows** double-click `START-WINDOWS.bat` if Python is installed, or open a terminal in this folder and run `py -m http.server 8765`, then visit `http://localhost:8765`.
 4. Open **Studio settings → Export full JSON backup** occasionally. Your browser's local data can be cleared independently of these website files.
+
+## 2026 storyline update (v6)
+
+- Adds the real reported divorce of Ivy Hawthorne and Redmond Red, preserving uncertainty about settlement and future contact with Primrose.
+- Adds editable **Relationships & wealth** ledger, including family ties, marriage contributions and open settlement questions.
+- Adds **Childhood getaways** with four season-specific editable custom trip ideas.
+- Adds **Lifespan planner** with editable newborn-to-elder day values, ready to copy into MCCC.
+- Adds **Storyline planner** for optional plots: Redmond’s future, Primrose as the shy Golden Child, the Wildcard villain paths, and rancher origin choices.
+- Supports a one-time non-destructive upgrade of v5 browser saves; no automatic reading of The Sims 4, and existing progress remains local to your browser.
+- Includes the formerly missing compressed Sims icon data scripts in GitHub Pages so in-game pictograms render on mobile. Note that these are not necessarily the exact official skill badges.
 
 ## Features
 

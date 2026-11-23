@@ -18,3 +18,9 @@
 body[data-theme="night"] .heir-name-options>div{background:#303c34;border-color:#506050}
 body[data-theme="night"] .heir-name-options strong{color:#eef4e8}
 @media(max-width:580px){.heir-name-options{grid-template-columns:1fr}}
+
+/* Dynasty Studio v6: responsive childhood, relationship, and calendar editors */
+.age-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:11px;margin-top:12px}.age-tile{display:flex;gap:5px;flex-direction:column;background:#faf7f1;border:1px solid #eee2d7;border-radius:12px;padding:12px}.age-tile span{font-size:12px;font-weight:700;color:#675c52}.age-tile input{width:100%;min-height:41px;border:1px solid #d8d2c5;border-radius:7px;background:white;color:#3c372e;padding:7px 10px;font-size:18px}.age-tile small{color:#897e70;font-size:10px}.season-trip{min-height:225px}.season-trip>p,.relationship-card>p{overflow-wrap:anywhere}.heart-link{color:#ba8694}.story-highlights{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.story-highlights article{padding:15px;border:1px solid #eee2d8;border-radius:11px;background:#fffcf8}.story-highlights h4{margin:8px 0;font-size:16px}.story-highlights p{line-height:1.6}.age-tile input:focus-visible,.season-trip button:focus-visible,.relationship-card button:focus-visible{outline:2px solid #729781;outline-offset:2px}
+@media(max-width:850px){.story-highlights{grid-template-columns:1fr}.age-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.season-trip{min-height:unset}}
+@media(max-width:440px){.age-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.age-tile{padding:9px}.age-tile input{font-size:16px}.relationship-card h3{font-size:20px}}
+body[data-theme="night"] .age-tile,body[data-theme="night"] .story-highlights article{background:#332f32;border-color:#4d4647}body[data-theme="night"] .age-tile span{color:#e8e2dd}
