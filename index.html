@@ -1,45 +1,50 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#f8f4ea">
-<title>The Hawthorne Legacy · Dynasty Studio v6</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f6f5f2">
+<title>The Hawthorne Legacy</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="sakura" aria-hidden="true">✧　❀　✧　❀　✧</div>
-<div class="top-strip"><span>✿ &nbsp; A MOST UNUSUAL FAMILY HISTORY &nbsp; ✿</span><span id="autosave" aria-live="polite">● Saved on this device</span></div>
-<header class="site-header">
- <div class="brandmark"><span class="brand-emblem">❦</span><div><div class="brand-kicker">THE DYNASTY STUDIO</div><h1 id="siteTitle">The Hawthorne <em>Legacy</em></h1><div class="brand-subtitle" id="siteSubtitle">Ten generations. One extraordinary family.</div></div></div>
- <div class="header-actions"><button class="small-btn" id="quickExport" type="button">↓ Export backup</button><button class="pill-btn" data-nav="settings" type="button">⚙ Customize studio</button></div>
+<header class="topbar">
+  <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <a class="brand" href="#" data-nav="home"><span class="brand-dot"></span><span id="siteTitle">The Hawthorne Legacy</span></a>
+  <div class="topbar-right">
+    <span class="save-state" id="autosave" aria-live="polite">Saved</span>
+    <button class="btn btn-ghost btn-sm" id="quickExport" type="button">Export backup</button>
+  </div>
 </header>
 <div class="layout">
-<aside class="sidebar" aria-label="Main navigation">
- <div class="side-heading">THE FAMILY LEDGER <span>✤</span></div>
- <nav id="nav" class="side-nav">
-  <button data-nav="home" class="active"><span>⌂</span> Dynasty overview</button>
-  <button data-nav="chapters"><span>❀</span> Generations <small>10</small></button>
-  <button data-nav="skills"><span>✤</span> Skill atlas <small>75</small></button>
-  <button data-nav="fate"><span>✧</span> Fate & pregnancy</button>
-  <button data-nav="people"><span>♡</span> Family chronicle</button>
-  <button data-nav="relations"><span>♢</span> Relationships & wealth</button>
-  <button data-nav="trips"><span>☀</span> Childhood getaways</button>
-  <button data-nav="ages"><span>⌛</span> Lifespan planner</button>
-  <button data-nav="hooks"><span>✎</span> Storyline planner</button>
-  <button data-nav="vault"><span>◇</span> Heirloom vault</button>
-  <button data-nav="quests"><span>✦</span> Secret adventures</button>
-  <button data-nav="rules"><span>☷</span> Rulebook</button>
-  <button data-nav="settings"><span>⚙</span> Studio settings</button>
- </nav>
- <div class="side-bottom"><div class="side-quote"><span class="quote-ornament">❝</span> A story cannot be inherited if nobody remembers it. <span class="quote-ornament">❞</span></div><div class="side-meta">OFFLINE FIRST · AUTO SAVED<br>NO SIMS SAVE FILE ACCESS</div></div>
-</aside>
-<main class="main" id="main" tabindex="-1"></main>
+  <aside class="sidebar" id="sidebar" aria-label="Main navigation">
+    <nav id="nav" class="nav">
+      <div class="nav-group">Play</div>
+      <button data-nav="home" class="active">Overview</button>
+      <button data-nav="chapters">Generations</button>
+      <button data-nav="fate">Fate &amp; chaos <span class="nav-count" id="navChaos"></span></button>
+      <button data-nav="quests">Side challenges</button>
+      <div class="nav-group">Family</div>
+      <button data-nav="people">Family &amp; chronicle</button>
+      <button data-nav="relations">Relationships &amp; money</button>
+      <button data-nav="vault">Family box</button>
+      <button data-nav="hooks">Storylines</button>
+      <div class="nav-group">Planning</div>
+      <button data-nav="skills">Skills</button>
+      <button data-nav="trips">Childhood trips</button>
+      <button data-nav="ages">Lifespan</button>
+      <button data-nav="rules">Rules</button>
+      <button data-nav="settings">Settings</button>
+    </nav>
+  </aside>
+  <main class="main" id="main" tabindex="-1"></main>
 </div>
-<footer class="footer">✿ Unofficial Sims 4 fan-made tracker. Sims 4 imagery and game names belong to their respective owners. ✿</footer>
+<footer class="footer">Fan-made Sims 4 tracker. The Sims 4 and its assets belong to Electronic Arts.</footer>
 <div id="toast" role="status" aria-live="polite"></div>
 <div id="modalLayer" class="modal-layer" hidden></div>
 <script src="catalog.js"></script>
 <script src="seed.js"></script>
+<script src="migrate-v6.js"></script>
 <script src="icons-data-01.js" defer></script>
 <script src="icons-data-02.js" defer></script>
 <script src="icons-data-03.js" defer></script>

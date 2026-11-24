@@ -1,25 +1,27 @@
 window.INITIAL_HAWTHORNE = {
-  "version": 6,
+  "version": 7,
   "settings": {
     "title": "The Hawthorne Legacy",
-    "subtitle": "Ten generations. One extraordinary family.",
+    "subtitle": "Ten generations. One very messy family.",
     "seasonDays": 14,
     "pregnancyDays": 9,
     "lifespan": "Custom",
     "strictOneSim": false,
-    "theme": "storybook",
+    "theme": "light",
     "startMoney": "§0",
     "customRules": [
-      "Firstborn biological child inherits the dynasty, regardless of gender. Biological male–female reproduction is required for succession under these house rules.",
-      "Only control the current protagonist in ordinary life. Children may be controlled during school camps, holidays, sleepovers, and formative adventures; no grinding skills, grades, or friendships. Household autonomy stays enabled.",
-      "Transfer primary control to the firstborn at young adulthood. Childhood story-trip control does not trigger succession.",
-      "Each generation moves to its assigned world.",
-      "No gameplay money or skill cheats; building and bug-fix exceptions allowed.",
-      "Legitimate marriage money and inheritance are allowed, but never replace personal goals.",
-      "Every protagonist has at least one flawed personality trait.",
-      "Firstborn names follow the generation color using flowers or botanical names; select the girl/boy suggestion or customize it. Secondborn names are gem or mineral-inspired.",
-      "Preserve one physical heirloom per generation in a traveling storage box.",
-      "Fates should be kept once drawn. Do not force tragedies that did not happen. Record unforeseen relationship drama and let consequences emerge."
+      "The firstborn biological child inherits, whatever their gender.",
+      "Only control the current heir. Kids can be controlled on trips, sleepovers and big life moments, never to grind skills or grades. Autonomy stays on.",
+      "Control passes to the firstborn when they become a young adult.",
+      "Every generation moves to its own world.",
+      "No money or skill cheats. Build mode cheats and bug fixes are fine.",
+      "Marriage money and inheritance are allowed, but they never tick a goal for you.",
+      "Every heir has at least one bad trait.",
+      "Firstborns get a flower name in the generation's colour. Secondborns get a gem or mineral name.",
+      "The family box holds the objects that define the Hawthornes. Every generation adds to it, and nothing ever leaves it.",
+      "Every roll is binding. When something happens on its own, log it and roll its consequence. No reloading to dodge a result.",
+      "If the heir hasn't finished every core goal by the time they become an elder, the firstborn loses the inheritance and it goes to the secondborn. The generation is marked as failed in the chronicle.",
+      "No occults in the family. Visiting Sixam and other worlds is fine."
     ],
     "childControlMode": "Story trips & formative events only",
     "lifeStages": {
@@ -42,8 +44,8 @@ window.INITIAL_HAWTHORNE = {
       "title": "The Pioneer",
       "world": "Henford-on-Bagley",
       "color": "#91AD89",
-      "subtitle": "Roots • perseverance • rural life",
-      "story": "Ivy began with §0, built a botanical homestead, and had Primrose with Father Winter despite contraception. After kissing an enchanted frog, she married Redmond Red, a retired noble who brought substantial wealth and loved Primrose. Later Ivy reciprocated Father Winter’s flirting in front of Redmond; arguments followed, Ivy requested a divorce, and Redmond left the house heartbroken. Her next chapter is unwritten.",
+      "subtitle": "Roots, stubbornness, farm life",
+      "story": "Ivy started with §0 and a patch of dirt in Henford-on-Bagley. Father Winter got her pregnant even though they used protection, and Primrose was born. Broke and hungry, she went frog hunting, kissed the first frog she caught, and got Redmond Red: a rich, retired noble. She married him and convinced him to farm and raise Primrose as his own. Then Father Winter showed up, flirted with her in front of Redmond, and she flirted right back. Fights, divorce, Redmond out of the house. Ivy couldn't be happier.",
       "aspiration": "Freelance Botanist",
       "traits": "Loner · Loves Outdoors · Ambitious",
       "career": "Self-employed botanist",
@@ -79,84 +81,88 @@ window.INITIAL_HAWTHORNE = {
         {
           "id": "completethefre42",
           "text": "Complete the Freelance Botanist aspiration",
-          "points": 15,
-          "done": false
+          "points": 20,
+          "done": false,
+          "core": true
         },
         {
           "id": "reachgardening24",
-          "text": "Reach Gardening level 10",
+          "text": "Gardening level 10",
           "points": 15,
-          "done": false
+          "done": false,
+          "core": true
         },
         {
           "id": "reachhandiness24",
-          "text": "Reach Handiness level 10",
+          "text": "Handiness level 10",
           "points": 15,
-          "done": false
+          "done": false,
+          "core": true
         },
         {
           "id": "grow20distinct34",
-          "text": "Grow 20 distinct species of plants",
+          "text": "Grow 20 different plant species",
           "points": 15,
           "done": false
         },
         {
           "id": "growfiveperfec32",
-          "text": "Grow five perfect-quality plants",
+          "text": "Grow 5 perfect-quality plants",
           "points": 15,
           "done": false
         },
         {
           "id": "growadeathflow32",
-          "text": "Grow a Death Flower legitimately",
+          "text": "Grow a Death Flower without cheats",
           "points": 15,
           "done": false
         },
         {
           "id": "usegraftingtop43",
-          "text": "Use grafting to produce a new plant species",
+          "text": "Graft a new plant species",
           "points": 15,
           "done": false
         },
         {
           "id": "winafinchwickf32",
-          "text": "Win a Finchwick Fair competition",
+          "text": "Win first place at the Finchwick Fair",
           "points": 15,
           "done": false
         },
         {
           "id": "raisechickensa57",
-          "text": "Raise chickens and at least one other type of farm animal",
+          "text": "Own chickens and at least one other farm animal at the same time",
           "points": 15,
           "done": false
         },
         {
           "id": "experienceallf44",
-          "text": "Experience all four seasons on the homestead",
-          "points": 15,
+          "text": "Live through all four seasons on the farm",
+          "points": 10,
           "done": false
         },
         {
           "id": "completethefou49",
-          "text": "Complete the four stages of homestead development",
+          "text": "Finish all four homestead development stages",
           "points": 15,
           "done": false
         },
         {
           "id": "meettherandomi42",
-          "text": "Meet the randomized biological family fate",
+          "text": "Complete the family fate",
           "points": 15,
-          "done": false
+          "done": false,
+          "core": true
         },
         {
           "id": "raisethefirstb53",
-          "text": "Raise the firstborn without directly controlling them",
+          "text": "Don't control Primrose outside trips and big moments until she's a young adult",
           "points": 15,
           "done": false
         },
         {
           "id": "placeararebota60",
-          "text": "Place a rare botanical heirloom in the traveling storage box",
+          "text": "Put at least 3 objects in the family box",
           "points": 15,
           "done": false
         }
@@ -164,26 +170,26 @@ window.INITIAL_HAWTHORNE = {
       "lot": [
         {
           "id": "l1",
-          "name": "Simple Living — entire generation",
+          "name": "Simple Living: whole generation",
           "done": false
         },
         {
           "id": "l2",
-          "name": "Wild Foxes — entire generation",
+          "name": "Wild Foxes: whole generation",
           "done": false
         },
         {
           "id": "l3",
-          "name": "Off-the-Grid — until utility upgrade",
+          "name": "Off-the-Grid: until the farm can pay for utilities",
           "done": false
         },
         {
           "id": "l4",
-          "name": "Gremlins — 21 consecutive days after establishing home",
+          "name": "Gremlins: 21 days in a row after moving in",
           "done": false
         }
       ],
-      "heirloomIdea": "A rare personally grown flower, pressed plant or botanical keepsake",
+      "heirloomIdea": "Pressed flowers from her own garden, her first watering can, the frog-hunting jar",
       "notes": "",
       "birthDate": "",
       "home": "",
@@ -191,7 +197,14 @@ window.INITIAL_HAWTHORNE = {
       "simDay": "",
       "completed": false,
       "girlName": "Ivy",
-      "boyName": ""
+      "boyName": "",
+      "vibe": {
+        "name": "The farm feeds the family",
+        "test": "For one full season, everything the household eats comes from the farm: grown, fished, foraged or from her own animals.",
+        "fail": "One bought, ordered or restaurant meal and it fails.",
+        "points": 40,
+        "status": "pending"
+      }
     },
     {
       "id": 2,
@@ -199,10 +212,10 @@ window.INITIAL_HAWTHORNE = {
       "title": "The Golden Child",
       "world": "Windenburg",
       "color": "#D9B655",
-      "subtitle": "Prestige • expectation • belonging",
-      "story": "Primrose is Ivy and Father Winter’s biological daughter. Shy as an infant, she was loved by Father Winter and by her former stepfather Redmond Red. Her childhood now includes her mother’s divorce from Redmond; what Primrose feels or chooses later is for gameplay to decide. She is the Golden Child of Windenburg.",
-      "aspiration": "Successful Lineage / editable",
-      "traits": "Shy (infant trait); later traits randomized",
+      "subtitle": "Prestige, expectations, fitting in",
+      "story": "Ivy and Father Winter's daughter. A shy baby who grew up with two dads who loved her: Father Winter, and Redmond until her mother threw him out. She's rich, she's watched, and everyone expects her to be perfect in Windenburg.",
+      "aspiration": "Successful Lineage (or one that fits her traits)",
+      "traits": "Shy, the rest comes from how she grows up",
       "career": "",
       "status": "planned",
       "skills": [
@@ -220,61 +233,64 @@ window.INITIAL_HAWTHORNE = {
       "goals": [
         {
           "id": "reachcharismal23",
-          "text": "Reach Charisma level 10",
+          "text": "Charisma level 10",
           "points": 15,
-          "done": false
+          "done": false,
+          "core": true
         },
         {
           "id": "reachpianoleve20",
-          "text": "Reach Piano level 10",
+          "text": "Piano level 10",
           "points": 15,
-          "done": false
+          "done": false,
+          "core": true
         },
         {
           "id": "completeanaspi53",
-          "text": "Complete an aspiration that suits their actual traits",
-          "points": 15,
-          "done": false
+          "text": "Complete an aspiration that fits her real traits",
+          "points": 20,
+          "done": false,
+          "core": true
         },
         {
           "id": "buildandmainta40",
-          "text": "Build and maintain a close social circle",
+          "text": "Have 5 good friends (75+) at the same time",
           "points": 15,
           "done": false
         },
         {
           "id": "hostthreesucce39",
-          "text": "Host three successful formal gatherings",
+          "text": "Throw 3 parties that get a gold medal",
           "points": 15,
           "done": false
         },
         {
           "id": "establisharesp45",
-          "text": "Establish a respectable career or public role",
+          "text": "Reach level 8 or higher in a career",
           "points": 15,
           "done": false
         },
         {
           "id": "navigateonegen70",
-          "text": "Navigate one genuine disappointment without cheating away consequences",
+          "text": "Fail at something big (demotion, lost competition, rejected proposal) and carry on without reloading",
           "points": 15,
           "done": false
         },
         {
           "id": "haveanindepend38",
-          "text": "Have an independent home in Windenburg",
-          "points": 15,
+          "text": "Own a house in Windenburg",
+          "points": 10,
           "done": false
         },
         {
           "id": "raisethefirstb32",
-          "text": "Raise the firstborn autonomously",
+          "text": "Don't control the firstborn outside trips and big moments",
           "points": 15,
           "done": false
         },
         {
           "id": "preserveaprest36",
-          "text": "Preserve a prestige-related heirloom",
+          "text": "Put at least 3 objects in the family box",
           "points": 15,
           "done": false
         }
@@ -282,11 +298,11 @@ window.INITIAL_HAWTHORNE = {
       "lot": [
         {
           "id": "l1",
-          "name": "Optional: high maintenance social calendar",
+          "name": "High Maintenance social calendar",
           "done": false
         }
       ],
-      "heirloomIdea": "A medal, instrument, formal portrait or award",
+      "heirloomIdea": "A medal, her piano sheet music, a formal portrait",
       "notes": "",
       "birthDate": "",
       "home": "",
@@ -294,7 +310,14 @@ window.INITIAL_HAWTHORNE = {
       "simDay": "",
       "completed": false,
       "girlName": "Primrose",
-      "boyName": ""
+      "boyName": "",
+      "vibe": {
+        "name": "Never embarrass the family",
+        "test": "Primrose's reputation stays Neutral or better for the whole generation.",
+        "fail": "The moment her reputation drops below Neutral, it fails.",
+        "points": 40,
+        "status": "pending"
+      }
     },
     {
       "id": 3,
@@ -302,10 +325,10 @@ window.INITIAL_HAWTHORNE = {
       "title": "The Wildcard",
       "world": "San Myshuno",
       "color": "#BA5364",
-      "subtitle": "Rebellion • vice • consequences",
-      "story": "The opposite of the Golden Child. The Wildcard may become a murderous recluse, a nightlife criminal, or a self-sabotaging failure. Mods are optional. Their child’s response should emerge naturally.",
-      "aspiration": "Public Enemy / editable",
-      "traits": "At least one major flaw",
+      "subtitle": "Rebellion, vice, consequences",
+      "story": "Everything the Golden Child wasn't. Could end up a recluse killer, a nightlife boss, or a total mess who ruins everything they touch. Their kid has to grow up with that.",
+      "aspiration": "Public Enemy (or a crime path)",
+      "traits": "At least one really bad trait",
       "career": "",
       "status": "planned",
       "skills": [
@@ -323,55 +346,58 @@ window.INITIAL_HAWTHORNE = {
       "goals": [
         {
           "id": "reachmischiefl23",
-          "text": "Reach Mischief level 10",
+          "text": "Mischief level 10",
           "points": 15,
-          "done": false
+          "done": false,
+          "core": true
         },
         {
           "id": "masteranothers53",
-          "text": "Master another skill fitting the actual criminal path",
+          "text": "Max a second skill that fits their crime path (Comedy by default)",
           "points": 15,
-          "done": false
+          "done": false,
+          "core": true
         },
         {
           "id": "moveintoasanmy33",
-          "text": "Move into a San Myshuno apartment",
-          "points": 15,
+          "text": "Live in a San Myshuno apartment",
+          "points": 10,
           "done": false
         },
         {
           "id": "chooseorrandom42",
-          "text": "Choose or randomize a villainous lifestyle",
+          "text": "Pick a villain path in the storyline planner and stick to it",
           "points": 15,
           "done": false
         },
         {
           "id": "faceatleastone60",
-          "text": "Face at least one believable consequence of criminal choices",
-          "points": 15,
+          "text": "Get caught at least once: jail, a beating, being fired or a scandal. No reloading",
+          "points": 20,
           "done": false
         },
         {
           "id": "maintainadange52",
-          "text": "Maintain a dangerous rivalry or corrupted friendship",
+          "text": "Keep an enemy (-50 or lower) for at least 2 seasons",
           "points": 15,
           "done": false
         },
         {
           "id": "experienceanau50",
-          "text": "Experience an authentic career or business setback",
+          "text": "Get demoted, fired or lose a business at least once",
           "points": 15,
           "done": false
         },
         {
           "id": "haveafirstborn64",
-          "text": "Have a firstborn who can inherit regardless of parental morality",
+          "text": "Have a biological firstborn",
           "points": 15,
-          "done": false
+          "done": false,
+          "core": true
         },
         {
           "id": "preserveaquest47",
-          "text": "Preserve a questionable but meaningful heirloom",
+          "text": "Put at least 3 objects in the family box (stolen counts)",
           "points": 15,
           "done": false
         }
@@ -379,11 +405,11 @@ window.INITIAL_HAWTHORNE = {
       "lot": [
         {
           "id": "l1",
-          "name": "Optional: bad neighborhood or apartment drawback",
+          "name": "Apartment with a bad drawback (noisy neighbours, pests, or haunted)",
           "done": false
         }
       ],
-      "heirloomIdea": "A dubious trophy, old key, notorious photograph or evidence",
+      "heirloomIdea": "A stolen object, a mugshot, a key to somewhere they shouldn't have been",
       "notes": "",
       "birthDate": "",
       "home": "",
@@ -391,7 +417,14 @@ window.INITIAL_HAWTHORNE = {
       "simDay": "",
       "completed": false,
       "girlName": "Rose",
-      "boyName": "Adonis"
+      "boyName": "Adonis",
+      "vibe": {
+        "name": "Never goes straight",
+        "test": "The Wildcard never keeps a normal, legal job for more than 7 Sim days.",
+        "fail": "A legal career held for longer than 7 days and it fails.",
+        "points": 40,
+        "status": "pending"
+      }
     },
     {
       "id": 4,
@@ -399,10 +432,10 @@ window.INITIAL_HAWTHORNE = {
       "title": "The Homesteader",
       "world": "Chestnut Ridge",
       "color": "#91C5DA",
-      "subtitle": "Freedom • horses • reinvention",
-      "story": "The Wildcard’s firstborn chooses a ranch life. It may be an escape, a love of animals, or a way to invest inherited criminal wealth. Do not force a redemption arc.",
-      "aspiration": "Championship Rider / editable",
-      "traits": "Determined by actual childhood",
+      "subtitle": "Freedom, horses, starting over",
+      "story": "The Wildcard's firstborn runs off to a ranch in Chestnut Ridge. Maybe to get away from their parent, maybe to wash dirty money, maybe they just love horses.",
+      "aspiration": "Championship Rider (or another ranch aspiration)",
+      "traits": "Depends on how their childhood went",
       "career": "",
       "status": "planned",
       "skills": [
@@ -420,61 +453,63 @@ window.INITIAL_HAWTHORNE = {
       "goals": [
         {
           "id": "reachhorseridi27",
-          "text": "Reach Horse Riding level 10",
+          "text": "Horse Riding level 10",
           "points": 15,
-          "done": false
+          "done": false,
+          "core": true
         },
         {
           "id": "reachnectarmak27",
-          "text": "Reach Nectar Making level 5",
+          "text": "Nectar Making level 5",
           "points": 15,
-          "done": false
+          "done": false,
+          "core": true
         },
         {
           "id": "ownandcarefora36",
-          "text": "Own and care for at least two horses",
+          "text": "Own and care for at least 2 horses at the same time",
           "points": 15,
           "done": false
         },
         {
           "id": "winatopequestr32",
-          "text": "Win a top equestrian competition",
-          "points": 15,
+          "text": "Win the highest-level horse competition",
+          "points": 20,
           "done": false
         },
         {
           "id": "trainatleaston37",
-          "text": "Train at least one horse meaningfully",
+          "text": "Max at least one skill on one horse",
           "points": 15,
           "done": false
         },
         {
           "id": "developaworkin23",
-          "text": "Develop a working ranch",
+          "text": "Run the ranch with at least 4 animals",
           "points": 15,
           "done": false
         },
         {
           "id": "createanexcept44",
-          "text": "Create an exceptional aged nectar collection",
+          "text": "Age 5 bottles of nectar to top quality",
           "points": 15,
           "done": false
         },
         {
           "id": "buildaclosebon33",
-          "text": "Build a close bond with an animal",
-          "points": 15,
+          "text": "Get one animal to max friendship",
+          "points": 10,
           "done": false
         },
         {
           "id": "decidehowtohan49",
-          "text": "Decide how to handle the Wildcard parent’s legacy",
+          "text": "Pick a side on the Wildcard parent: cut them off, take them in, or take over their business. Write it in the chronicle",
           "points": 15,
           "done": false
         },
         {
           "id": "preservearanch25",
-          "text": "Preserve a ranch heirloom",
+          "text": "Put at least 3 objects in the family box",
           "points": 15,
           "done": false
         }
@@ -482,11 +517,11 @@ window.INITIAL_HAWTHORNE = {
       "lot": [
         {
           "id": "l1",
-          "name": "Optional: Simple Living",
+          "name": "Simple Living",
           "done": false
         }
       ],
-      "heirloomIdea": "A winning ribbon, bottle of nectar or first horse keepsake",
+      "heirloomIdea": "A winning ribbon, a bottle of nectar, their first horse's brush",
       "notes": "",
       "birthDate": "",
       "home": "",
@@ -494,7 +529,14 @@ window.INITIAL_HAWTHORNE = {
       "simDay": "",
       "completed": false,
       "girlName": "Lobelia",
-      "boyName": "Aster"
+      "boyName": "Aster",
+      "vibe": {
+        "name": "The ranch pays for itself",
+        "test": "All household income comes from the ranch: nectar, competitions, animal products. No regular job.",
+        "fail": "Take a career job and it fails.",
+        "points": 40,
+        "status": "pending"
+      }
     },
     {
       "id": 5,
@@ -502,9 +544,9 @@ window.INITIAL_HAWTHORNE = {
       "title": "The Starlet",
       "world": "Ondarion",
       "color": "#E6A0B9",
-      "subtitle": "Glamour • fame • performance",
-      "story": "A descendant of ranchers arrives in an aristocratic world and chases the spotlight. The noble environment can connect to Redmond Red’s forgotten origins.",
-      "aspiration": "Master Actor / editable",
+      "subtitle": "Glamour, fame, performance",
+      "story": "A rancher's kid lands in Ondarion and wants the spotlight. Aristocrats everywhere, which might dig up Redmond Red's old noble family.",
+      "aspiration": "Master Actor",
       "traits": "At least one insecurity",
       "career": "",
       "status": "planned",
@@ -523,55 +565,58 @@ window.INITIAL_HAWTHORNE = {
       "goals": [
         {
           "id": "reachactinglev21",
-          "text": "Reach Acting level 10",
+          "text": "Acting level 10",
           "points": 15,
-          "done": false
+          "done": false,
+          "core": true
         },
         {
           "id": "reachcharismal23",
-          "text": "Reach Charisma level 10",
+          "text": "Charisma level 10",
           "points": 15,
-          "done": false
+          "done": false,
+          "core": true
         },
         {
           "id": "risetofivestar34",
-          "text": "Rise to five-star celebrity status",
-          "points": 15,
-          "done": false
+          "text": "Become a 5-star celebrity",
+          "points": 20,
+          "done": false,
+          "core": true
         },
         {
           "id": "earnanotableac27",
-          "text": "Earn a notable acting award",
+          "text": "Win an acting award",
           "points": 15,
           "done": false
         },
         {
           "id": "appearatfivehi34",
-          "text": "Appear at five high-profile events",
-          "points": 15,
+          "text": "Go to 5 high-profile events",
+          "points": 10,
           "done": false
         },
         {
           "id": "maintainanimag50",
-          "text": "Maintain an image that clashes with a private flaw",
-          "points": 15,
+          "text": "Get a celebrity quirk and keep it all generation",
+          "points": 10,
           "done": false
         },
         {
           "id": "experienceagen46",
-          "text": "Experience a genuine public scandal or setback",
-          "points": 15,
+          "text": "Survive a scandal without dropping below Neutral reputation",
+          "points": 20,
           "done": false
         },
         {
           "id": "buildaluxuriou45",
-          "text": "Build a luxurious but narratively earned home",
+          "text": "Pay for the dream house with acting money only",
           "points": 15,
           "done": false
         },
         {
           "id": "passonanheirlo32",
-          "text": "Pass on an heirloom with a story",
+          "text": "Put at least 3 objects in the family box",
           "points": 15,
           "done": false
         }
@@ -579,11 +624,11 @@ window.INITIAL_HAWTHORNE = {
       "lot": [
         {
           "id": "l1",
-          "name": "Optional: celebrity house restrictions",
+          "name": "No house bigger than what acting money can pay for",
           "done": false
         }
       ],
-      "heirloomIdea": "An award, signed poster, costume or glamorous jewel",
+      "heirloomIdea": "An award, a signed poster, a costume, a fancy jewel",
       "notes": "",
       "birthDate": "",
       "home": "",
@@ -591,7 +636,14 @@ window.INITIAL_HAWTHORNE = {
       "simDay": "",
       "completed": false,
       "girlName": "Daphne",
-      "boyName": "William"
+      "boyName": "William",
+      "vibe": {
+        "name": "The secret comes out",
+        "test": "Write down the Starlet's secret in the chapter notes when the generation starts. It has to come out in public before they reach 5 stars.",
+        "fail": "Reach 5 stars with the secret still hidden and it fails.",
+        "points": 40,
+        "status": "pending"
+      }
     },
     {
       "id": 6,
@@ -599,9 +651,9 @@ window.INITIAL_HAWTHORNE = {
       "title": "The Scholar",
       "world": "Copperdale",
       "color": "#A58ACB",
-      "subtitle": "Ambition • research • curiosity",
-      "story": "A serious academic growing up in a world associated with youth and education. Let teen experiences in Copperdale shape adulthood rather than forcing perfect performance.",
-      "aspiration": "Academic / editable",
+      "subtitle": "Ambition, research, curiosity",
+      "story": "A serious student growing up in Copperdale. High school decides who they become, for better or worse.",
+      "aspiration": "Academic (or Nerd Brain / Renaissance Sim)",
       "traits": "At least one social or emotional flaw",
       "career": "",
       "status": "planned",
@@ -620,32 +672,35 @@ window.INITIAL_HAWTHORNE = {
       "goals": [
         {
           "id": "reachresearchd32",
-          "text": "Reach Research & Debate level 10",
+          "text": "Research & Debate level 10",
           "points": 15,
-          "done": false
+          "done": false,
+          "core": true
         },
         {
           "id": "reachlogicleve20",
-          "text": "Reach Logic level 10",
+          "text": "Logic level 10",
           "points": 15,
-          "done": false
+          "done": false,
+          "core": true
         },
         {
           "id": "attendandgradu49",
-          "text": "Attend and graduate university with strong grades",
-          "points": 15,
-          "done": false
+          "text": "Graduate university with distinction",
+          "points": 20,
+          "done": false,
+          "core": true
         },
         {
           "id": "mentorayounger32",
-          "text": "Mentor a younger Sim if possible",
-          "points": 15,
+          "text": "Teach someone a skill up to level 5",
+          "points": 10,
           "done": false
         },
         {
           "id": "buildalibraryl30",
-          "text": "Build a library, lab, or study",
-          "points": 15,
+          "text": "Build a study or lab with 3 bookshelves and a microscope or chemistry table",
+          "points": 10,
           "done": false
         },
         {
@@ -656,19 +711,19 @@ window.INITIAL_HAWTHORNE = {
         },
         {
           "id": "researchorcoll42",
-          "text": "Research or collect ten meaningful objects",
+          "text": "Collect 10 fossils, crystals or elements",
           "points": 15,
           "done": false
         },
         {
           "id": "buildfriendshi45",
-          "text": "Build friendships beyond academic performance",
-          "points": 15,
+          "text": "Have 3 friends who aren't classmates or coworkers",
+          "points": 10,
           "done": false
         },
         {
           "id": "recordanorigin39",
-          "text": "Record an original research achievement",
+          "text": "Win a debate showdown at university",
           "points": 15,
           "done": false
         }
@@ -676,11 +731,11 @@ window.INITIAL_HAWTHORNE = {
       "lot": [
         {
           "id": "l1",
-          "name": "Optional: No free skill cheats or aspiration reward shortcuts",
+          "name": "No skill or aspiration-reward shortcuts",
           "done": false
         }
       ],
-      "heirloomIdea": "A thesis, rare book or scientific artifact",
+      "heirloomIdea": "Their thesis, a rare book, a microscope",
       "notes": "",
       "birthDate": "",
       "home": "",
@@ -688,7 +743,14 @@ window.INITIAL_HAWTHORNE = {
       "simDay": "",
       "completed": false,
       "girlName": "Iris",
-      "boyName": "Hyacinthe"
+      "boyName": "Hyacinthe",
+      "vibe": {
+        "name": "Perfect record",
+        "test": "Straight A or B grades all the way through high school and university.",
+        "fail": "One report card below B, or dropping out, and it fails.",
+        "points": 40,
+        "status": "pending"
+      }
     },
     {
       "id": 7,
@@ -696,10 +758,10 @@ window.INITIAL_HAWTHORNE = {
       "title": "The Entrepreneur",
       "world": "Nordhaven",
       "color": "#59ADA5",
-      "subtitle": "Enterprise • craft • independence",
-      "story": "Build a creative enterprise in Nordhaven. Career success should require real operations, not only accumulating household wealth.",
-      "aspiration": "Fabulously Wealthy / editable",
-      "traits": "At least one costly weakness",
+      "subtitle": "Business, craft, independence",
+      "story": "Builds a business from scratch in Nordhaven. Money in the bank doesn't count: the shop has to actually run.",
+      "aspiration": "Fabulously Wealthy",
+      "traits": "At least one expensive weakness",
       "career": "",
       "status": "planned",
       "skills": [
@@ -717,55 +779,58 @@ window.INITIAL_HAWTHORNE = {
       "goals": [
         {
           "id": "reachentrepren26",
-          "text": "Reach Entrepreneur level 5",
+          "text": "Entrepreneur level 5",
           "points": 15,
-          "done": false
+          "done": false,
+          "core": true
         },
         {
           "id": "reachphotograp25",
-          "text": "Reach Photography level 5",
+          "text": "Photography level 5",
           "points": 15,
-          "done": false
+          "done": false,
+          "core": true
         },
         {
           "id": "createabusines45",
-          "text": "Create a business with a distinctive identity",
-          "points": 15,
+          "text": "Give the business a name, a sign and a dress code",
+          "points": 10,
           "done": false
         },
         {
           "id": "openasmallbusi41",
-          "text": "Open a small business in a legitimate lot",
+          "text": "Open a business on its own lot",
           "points": 15,
-          "done": false
+          "done": false,
+          "core": true
         },
         {
           "id": "earnameaningfu33",
-          "text": "Earn a meaningful profit honestly",
-          "points": 15,
+          "text": "Make §50,000 profit from the business",
+          "points": 20,
           "done": false
         },
         {
           "id": "developandsell46",
-          "text": "Develop and sell original products or services",
+          "text": "Sell 50 handmade products",
           "points": 15,
           "done": false
         },
         {
           "id": "experienceandr46",
-          "text": "Experience and recover from a business setback",
+          "text": "Bounce back from a bad week, bad review or temporary closure",
           "points": 15,
           "done": false
         },
         {
           "id": "hireorcollabor32",
-          "text": "Hire or collaborate with someone",
-          "points": 15,
+          "text": "Hire at least 2 employees",
+          "points": 10,
           "done": false
         },
         {
           "id": "handdownahandm38",
-          "text": "Hand down a handmade business keepsake",
+          "text": "Put at least 3 objects in the family box",
           "points": 15,
           "done": false
         }
@@ -773,11 +838,11 @@ window.INITIAL_HAWTHORNE = {
       "lot": [
         {
           "id": "l1",
-          "name": "Optional: expenses tracked separately",
+          "name": "Track business expenses separately",
           "done": false
         }
       ],
-      "heirloomIdea": "First product, antique camera or company sign",
+      "heirloomIdea": "The first thing they ever sold, an old camera, the shop sign",
       "notes": "",
       "birthDate": "",
       "home": "",
@@ -785,7 +850,14 @@ window.INITIAL_HAWTHORNE = {
       "simDay": "",
       "completed": false,
       "girlName": "Ixia",
-      "boyName": "Juniper"
+      "boyName": "Juniper",
+      "vibe": {
+        "name": "Never broke",
+        "test": "The business stays open for the whole generation.",
+        "fail": "If it closes or goes under because of money, it fails.",
+        "points": 40,
+        "status": "pending"
+      }
     },
     {
       "id": 8,
@@ -793,9 +865,9 @@ window.INITIAL_HAWTHORNE = {
       "title": "The Storyteller",
       "world": "Ravenwood",
       "color": "#A17B69",
-      "subtitle": "Memory • mystery • mortality",
-      "story": "The family historian explores the border between life and death and gathers the truth about generations of Hawthornes.",
-      "aspiration": "Bestselling Author / editable",
+      "subtitle": "Memory, mystery, death",
+      "story": "The family historian. Obsessed with death and with digging up everything the Hawthornes did.",
+      "aspiration": "Bestselling Author",
       "traits": "An obsessive or morbid flaw",
       "career": "",
       "status": "planned",
@@ -814,55 +886,58 @@ window.INITIAL_HAWTHORNE = {
       "goals": [
         {
           "id": "reachwritingle22",
-          "text": "Reach Writing level 10",
+          "text": "Writing level 10",
           "points": 15,
-          "done": false
+          "done": false,
+          "core": true
         },
         {
           "id": "reachthanatolo25",
-          "text": "Reach Thanatology level 5",
+          "text": "Thanatology level 5",
           "points": 15,
-          "done": false
+          "done": false,
+          "core": true
         },
         {
           "id": "publishfiveboo18",
-          "text": "Publish five books",
+          "text": "Publish 5 books",
           "points": 15,
-          "done": false
+          "done": false,
+          "core": true
         },
         {
           "id": "recordstorieso41",
-          "text": "Record stories of at least five ancestors",
+          "text": "Write the stories of at least 5 ancestors in the chronicle",
           "points": 15,
           "done": false
         },
         {
           "id": "exploreravenwo36",
-          "text": "Explore Ravenwood and its traditions",
-          "points": 15,
+          "text": "Visit every Ravenwood neighbourhood",
+          "points": 10,
           "done": false
         },
         {
           "id": "completeanaspi49",
-          "text": "Complete an aspiration aligned with family memory",
+          "text": "Complete an aspiration about family or memory",
           "points": 15,
           "done": false
         },
         {
           "id": "attendordocume46",
-          "text": "Attend or document a meaningful family funeral",
-          "points": 15,
+          "text": "Go to a family funeral",
+          "points": 10,
           "done": false
         },
         {
           "id": "visitanimporta36",
-          "text": "Visit an important grave or memorial",
-          "points": 15,
+          "text": "Visit an ancestor's grave",
+          "points": 10,
           "done": false
         },
         {
           "id": "preservewritte44",
-          "text": "Preserve written evidence of a family secret",
+          "text": "Write a family secret in the chronicle",
           "points": 15,
           "done": false
         }
@@ -870,11 +945,11 @@ window.INITIAL_HAWTHORNE = {
       "lot": [
         {
           "id": "l1",
-          "name": "Optional: haunted residence",
+          "name": "Haunted house",
           "done": false
         }
       ],
-      "heirloomIdea": "A handwritten memoir, family book or memento mori",
+      "heirloomIdea": "A handwritten memoir, the family book, a memento mori",
       "notes": "",
       "birthDate": "",
       "home": "",
@@ -882,7 +957,14 @@ window.INITIAL_HAWTHORNE = {
       "simDay": "",
       "completed": false,
       "girlName": "Hazel",
-      "boyName": "Cedar"
+      "boyName": "Cedar",
+      "vibe": {
+        "name": "Keeper of the dead",
+        "test": "Attend the funeral of every Hawthorne who dies during this generation, and keep their tombstone or urn at home.",
+        "fail": "Miss one funeral or lose one urn and it fails.",
+        "points": 40,
+        "status": "pending"
+      }
     },
     {
       "id": 9,
@@ -890,10 +972,10 @@ window.INITIAL_HAWTHORNE = {
       "title": "The Visionary",
       "world": "Evergreen Harbor",
       "color": "#EEEDE9",
-      "subtitle": "Community • ecology • invention",
-      "story": "Turn family resources toward ecological renewal. Success is measured by genuine community changes, not merely acquiring a green mansion.",
-      "aspiration": "Eco Innovator / editable",
-      "traits": "At least one impractical ideal",
+      "subtitle": "Community, ecology, inventions",
+      "story": "Uses the family money to fix the neighbourhood in Evergreen Harbor. A green mansion alone doesn't count.",
+      "aspiration": "Eco Innovator",
+      "traits": "At least one unrealistic ideal",
       "career": "",
       "status": "planned",
       "skills": [
@@ -911,55 +993,58 @@ window.INITIAL_HAWTHORNE = {
       "goals": [
         {
           "id": "reachfabricati26",
-          "text": "Reach Fabrication level 10",
+          "text": "Fabrication level 10",
           "points": 15,
-          "done": false
+          "done": false,
+          "core": true
         },
         {
           "id": "reachlogicleve20",
-          "text": "Reach Logic level 10",
+          "text": "Logic level 10",
           "points": 15,
-          "done": false
+          "done": false,
+          "core": true
         },
         {
           "id": "improvetheneig38",
-          "text": "Improve the neighborhood eco-footprint",
-          "points": 15,
-          "done": false
+          "text": "Get the neighbourhood eco footprint to green",
+          "points": 20,
+          "done": false,
+          "core": true
         },
         {
           "id": "buildorrenovat36",
-          "text": "Build or renovate a sustainable home",
+          "text": "Build a home with solar panels or a wind turbine and a dew collector",
           "points": 15,
           "done": false
         },
         {
           "id": "crafttenuseful22",
-          "text": "Craft ten useful items",
-          "points": 15,
+          "text": "Fabricate 10 items",
+          "points": 10,
           "done": false
         },
         {
           "id": "supportacommun30",
-          "text": "Support a community initiative",
+          "text": "Get a Neighbourhood Action Plan passed",
           "points": 15,
           "done": false
         },
         {
           "id": "userecycledorr35",
-          "text": "Use recycled or reclaimed materials",
-          "points": 15,
+          "text": "Furnish a room with fabricated or upcycled objects only",
+          "points": 10,
           "done": false
         },
         {
           "id": "balancepersona40",
-          "text": "Balance personal wealth with public good",
-          "points": 15,
+          "text": "Never have more than §100,000 in household funds",
+          "points": 20,
           "done": false
         },
         {
           "id": "leaveasustaina28",
-          "text": "Leave a sustainable heirloom",
+          "text": "Put at least 3 objects in the family box",
           "points": 15,
           "done": false
         }
@@ -967,11 +1052,11 @@ window.INITIAL_HAWTHORNE = {
       "lot": [
         {
           "id": "l1",
-          "name": "Optional: Off-the-Grid",
+          "name": "Off-the-Grid",
           "done": false
         }
       ],
-      "heirloomIdea": "A fabricated object, environmental trophy or seed archive",
+      "heirloomIdea": "Something they fabricated, an eco award, a seed collection",
       "notes": "",
       "birthDate": "",
       "home": "",
@@ -979,7 +1064,14 @@ window.INITIAL_HAWTHORNE = {
       "simDay": "",
       "completed": false,
       "girlName": "Daisy-Lys",
-      "boyName": "Narcisse"
+      "boyName": "Narcisse",
+      "vibe": {
+        "name": "Practice what you preach",
+        "test": "The home lot's eco footprint stays neutral or green all generation.",
+        "fail": "If the lot goes industrial at any point, it fails.",
+        "points": 40,
+        "status": "pending"
+      }
     },
     {
       "id": 10,
@@ -987,10 +1079,10 @@ window.INITIAL_HAWTHORNE = {
       "title": "The Final Heir",
       "world": "San Sequoia",
       "color": "#292932",
-      "subtitle": "Home • reunion • legacy",
-      "story": "The final descendant reckons with everything the family created: the triumphs, scandals, tragedies, and acts of love.",
-      "aspiration": "Big Happy Family / editable",
-      "traits": "A flaw inherited or learned along the way",
+      "subtitle": "Home, reunion, legacy",
+      "story": "The last heir has to deal with everything the family ever did: the wins, the scandals, the deaths, and the love.",
+      "aspiration": "Big Happy Family",
+      "traits": "A flaw they inherited or picked up along the way",
       "career": "",
       "status": "planned",
       "skills": [
@@ -1008,73 +1100,76 @@ window.INITIAL_HAWTHORNE = {
       "goals": [
         {
           "id": "reachparenting24",
-          "text": "Reach Parenting level 10",
+          "text": "Parenting level 10",
           "points": 15,
-          "done": false
+          "done": false,
+          "core": true
         },
         {
           "id": "reachcharismal23",
-          "text": "Reach Charisma level 10",
+          "text": "Charisma level 10",
           "points": 15,
-          "done": false
+          "done": false,
+          "core": true
         },
         {
           "id": "buildameaningf43",
-          "text": "Build a meaningful multigenerational family",
+          "text": "Have at least 3 children",
           "points": 15,
           "done": false
         },
         {
           "id": "reuniterelativ51",
-          "text": "Reunite relatives from different Hawthorne branches",
+          "text": "Throw a party with relatives from at least 2 other Hawthorne branches",
           "points": 15,
           "done": false
         },
         {
           "id": "createthefinal30",
-          "text": "Create the final family estate",
+          "text": "Build the final family house in San Sequoia",
           "points": 15,
           "done": false
         },
         {
           "id": "recoverorrecor42",
-          "text": "Recover or record all ten family heirlooms",
-          "points": 15,
+          "text": "Every generation has at least one object in the family box",
+          "points": 20,
           "done": false
         },
         {
           "id": "completeafamil36",
-          "text": "Complete a family-related aspiration",
+          "text": "Complete a family aspiration",
           "points": 15,
-          "done": false
+          "done": false,
+          "core": true
         },
         {
           "id": "createapermane46",
-          "text": "Create a permanent memorial of all generations",
+          "text": "Build a memorial for all ten heirs (portraits, tombstones or statues)",
           "points": 15,
           "done": false
         },
         {
           "id": "recordthefamil48",
-          "text": "Record the family’s defining choices and regrets",
-          "points": 15,
+          "text": "Write the family's biggest regrets in the chronicle",
+          "points": 10,
           "done": false
         },
         {
           "id": "completethedyn50",
-          "text": "Complete the dynasty without money or skill cheats",
-          "points": 15,
+          "text": "Finish the legacy without money or skill cheats",
+          "points": 20,
           "done": false
         }
       ],
       "lot": [
         {
           "id": "l1",
-          "name": "Optional: family-oriented lot",
+          "name": "Family-friendly lot",
           "done": false
         }
       ],
-      "heirloomIdea": "The complete traveling box of Hawthorne heirlooms",
+      "heirloomIdea": "Something that sums up all ten generations",
       "notes": "",
       "birthDate": "",
       "home": "",
@@ -1082,7 +1177,14 @@ window.INITIAL_HAWTHORNE = {
       "simDay": "",
       "completed": false,
       "girlName": "Calla-Lily",
-      "boyName": "Cosmo"
+      "boyName": "Cosmo",
+      "vibe": {
+        "name": "Everyone under one roof",
+        "test": "By the end of the generation, three living generations live in the same house.",
+        "fail": "If the heir becomes an elder without that, it fails.",
+        "points": 40,
+        "status": "pending"
+      }
     }
   ],
   "people": [
@@ -1092,9 +1194,9 @@ window.INITIAL_HAWTHORNE = {
       "generation": 1,
       "role": "Founder",
       "parents": "",
-      "relationship": "Founder; ex-wife of Redmond Red",
+      "relationship": "Founder. Redmond's ex-wife",
       "traits": "Loner, Loves Outdoors, Ambitious",
-      "notes": "Founder of the Hawthorne farm. Divorced Redmond Red after flirting with Father Winter; she appeared relieved/happy about the divorce. Biological mother of Primrose.",
+      "notes": "Started the farm from nothing. Divorced Redmond after flirting with Father Winter in front of him, and was happy about it. Primrose's mum.",
       "photo": ""
     },
     {
@@ -1104,19 +1206,19 @@ window.INITIAL_HAWTHORNE = {
       "role": "Firstborn heir",
       "parents": "Ivy Hawthorne & Father Winter",
       "relationship": "Daughter",
-      "traits": "Shy (infant); Father Winter’s Baby if recognized in game",
-      "notes": "Daughter of Ivy and Father Winter. Shy infant. Redmond Red lovingly raised her as stepfather before the divorce; his future involvement is unknown.",
+      "traits": "Shy. Might have Father Winter's Baby, check in game",
+      "notes": "Ivy and Father Winter's daughter. Redmond raised her as his own until the divorce, and she adored him.",
       "photo": ""
     },
     {
       "id": "p-redmond",
       "name": "Redmond Red",
       "generation": 1,
-      "role": "Former spouse / former stepfather",
+      "role": "Ex-husband, ex-stepdad",
       "parents": "",
-      "relationship": "Ivy’s ex-husband; former stepfather of Primrose",
+      "relationship": "Ivy's ex-husband. Primrose's ex-stepdad",
       "traits": "",
-      "notes": "A frog transformed by Ivy’s kiss; a retired noble who brought considerable money to the farm and bonded with Primrose. After Ivy flirted with Father Winter, the marriage deteriorated. Ivy divorced him and he left the household heartbroken. His new home, settlement and future contact with Primrose are unknown.",
+      "notes": "A cursed frog until Ivy kissed him. Quit being a noble for her, his money paid for half the farm, and he loved Primrose like his own. Kicked out after Ivy flirted with Father Winter in front of him. Homeless and heartbroken.",
       "photo": ""
     },
     {
@@ -1125,9 +1227,9 @@ window.INITIAL_HAWTHORNE = {
       "generation": 1,
       "role": "Biological father of Primrose",
       "parents": "",
-      "relationship": "Primrose’s father; Ivy’s romantic interest",
+      "relationship": "Primrose's dad, Ivy's on-and-off fling",
       "traits": "",
-      "notes": "Biological father of Primrose who loves her. Flirted with Ivy while Redmond was at home, triggering an argument that led to divorce.",
+      "notes": "Primrose's biological dad, loves her. Showed up uninvited and flirted with Ivy while Redmond was home, which ended the marriage.",
       "photo": ""
     }
   ],
@@ -1138,35 +1240,35 @@ window.INITIAL_HAWTHORNE = {
       "generation": 1,
       "day": "",
       "title": "The unexpected beginning",
-      "body": "Ivy became pregnant with Father Winter’s child despite contraception and later gave birth to Primrose."
+      "body": "Ivy got pregnant by Father Winter even though they used protection, and had Primrose."
     },
     {
       "id": "j2",
       "generation": 1,
       "day": "",
       "title": "The frog prince",
-      "body": "Ivy kissed a frog, met Redmond Red, and eventually married him. Redmond retired from the noble career to live with the family."
+      "body": "Ivy kissed a frog, it turned into Redmond Red, and she married him. He quit being a noble to live on the farm."
     },
     {
       "id": "j3",
       "generation": 1,
       "day": "",
       "title": "An unwelcome visitor",
-      "body": "Tom Peeping repeatedly invaded Ivy’s privacy and was killed in a modded gameplay incident."
+      "body": "Tom Peeping kept spying on Ivy. She killed him (Extreme Violence)."
     },
     {
       "id": "j-marriage-wealth",
       "generation": 1,
       "day": "",
       "title": "The frog prince’s fortune",
-      "body": "After Ivy and Redmond Red married, Redmond brought substantial wealth to the Hawthorne farm. The money was acquired through normal gameplay, but Ivy still has to fulfill her personal botanical goals."
+      "body": "Redmond brought a lot of money into the farm when they married. It's legit, but it doesn't tick any of Ivy's goals."
     },
     {
       "id": "j-divorce-redmond",
       "generation": 1,
       "day": "",
       "title": "The fall of the frog prince",
-      "body": "Father Winter came to the house and flirted with Ivy. She accepted and flirted back while her husband Redmond Red was present. Redmond was upset. Their attempts to talk escalated into repeated arguments. Ivy requested a divorce; Redmond left the house heartbroken and without a home. Ivy appeared happy or relieved at the divorce. Any future reconciliation, settlement or parenting arrangement is undecided."
+      "body": "Father Winter came over and flirted with Ivy, and she flirted back with Redmond standing right there. Every talk after that turned into a fight. Ivy asked for a divorce, Redmond left with nowhere to go, and Ivy looked relieved, even happy."
     }
   ],
   "quests": [
@@ -1174,13 +1276,7 @@ window.INITIAL_HAWTHORNE = {
       "id": "strangerville",
       "name": "The StrangerVille Conspiracy",
       "points": 60,
-      "description": "Defeat the Mother Plant and bring back evidence."
-    },
-    {
-      "id": "grim",
-      "name": "The Reaper’s Bloodline",
-      "points": 50,
-      "description": "Have a biological child with Grim; firstborn Grimborn adds 30 if eligible."
+      "description": "Defeat the Mother Plant and bring back proof."
     },
     {
       "id": "selvadorada",
@@ -1192,7 +1288,7 @@ window.INITIAL_HAWTHORNE = {
       "id": "sixam",
       "name": "The Otherworldly Encounter",
       "points": 45,
-      "description": "Visit Sixam and return with a discovery."
+      "description": "Visit Sixam and bring something back."
     },
     {
       "id": "summit",
@@ -1201,28 +1297,22 @@ window.INITIAL_HAWTHORNE = {
       "description": "Complete the Mt. Komorebi mountain excursion."
     },
     {
-      "id": "occult",
-      "name": "The Immortal Affair",
-      "points": 35,
-      "description": "Experience an occult romance with real narrative consequences."
-    },
-    {
       "id": "collector",
       "name": "The Grand Collector",
       "points": 30,
-      "description": "Finish one entire collectible set."
+      "description": "Finish one whole collection."
     },
     {
       "id": "recovery",
       "name": "The Road to Recovery",
       "points": 35,
-      "description": "If a harmful habit develops in mod gameplay, complete a recovery arc."
+      "description": "If a Basemental habit happens, play the whole recovery."
     },
     {
       "id": "noble",
       "name": "The Discarded Crown",
       "points": 30,
-      "description": "A family member gives up nobility for a different life."
+      "description": "Someone in the family gives up a noble title for a different life. (Redmond already did.)"
     }
   ],
   "questDone": {},
@@ -1232,103 +1322,538 @@ window.INITIAL_HAWTHORNE = {
         "id": "fp1",
         "name": "The Planned Family",
         "weight": 28,
-        "details": "Attempt pregnancy within 21 days of young adulthood. At least two biological children.",
+        "details": "Try for a baby within 21 Sim days of becoming a young adult. At least 2 biological kids.",
         "minChildren": 2
       },
       {
         "id": "fp2",
         "name": "The Unexpected Beginning",
         "weight": 22,
-        "details": "Attempt pregnancy within 14 Sim days of young adulthood, whether married or not.",
+        "details": "Try for a baby within 14 Sim days of becoming a young adult, married or not.",
         "minChildren": 1
       },
       {
         "id": "fp3",
         "name": "The Crowded Cottage",
         "weight": 16,
-        "details": "Have at least four biological children.",
+        "details": "Have at least 4 biological kids.",
         "minChildren": 4
       },
       {
         "id": "fp4",
         "name": "The Late Bloomer",
         "weight": 16,
-        "details": "Wait until adulthood to deliberately attempt pregnancy.",
+        "details": "Don't try for a baby until the heir is an adult.",
         "minChildren": 1
       },
       {
         "id": "fp5",
         "name": "The Independent Parent",
         "weight": 10,
-        "details": "Raise the firstborn without a live-in romantic partner until their teen birthday.",
+        "details": "Raise the firstborn with no live-in partner until they turn teen.",
         "minChildren": 1
       },
       {
         "id": "fp6",
         "name": "The Small Family",
         "weight": 8,
-        "details": "Have one or two biological children.",
+        "details": "One or two biological kids, no more.",
         "minChildren": 1
       }
     ],
     "misfortune": [
       {
         "id": "mis1",
-        "name": "A Week of Repairs",
+        "name": "Repair week",
         "weight": 20,
         "points": 10,
-        "details": "For seven Sim days, repair instead of replacing objects."
+        "details": "For 7 Sim days, anything that breaks gets repaired by the heir. No replacing, no hiring."
       },
       {
         "id": "mis2",
-        "name": "An Old Grudge",
+        "name": "Bad neighbour",
         "weight": 15,
         "points": 10,
-        "details": "Make an enemy naturally and avoid friendly contact for seven Sim days."
+        "details": "Make an enemy naturally and stay away from them for 7 Sim days."
       },
       {
         "id": "mis3",
-        "name": "The Failed Harvest",
+        "name": "Bad harvest",
         "weight": 12,
         "points": 20,
-        "details": "Give up half the stored produce through gameplay or discard."
+        "details": "Throw away half of everything in the fridge and inventory."
       },
       {
         "id": "mis4",
-        "name": "An Unexpected Expense",
+        "name": "Unexpected bill",
         "weight": 20,
         "points": 10,
-        "details": "Lose 15% of household cash to an unavoidable expense."
+        "details": "Lose 20% of household funds."
       },
       {
         "id": "mis5",
-        "name": "The Family Debt",
+        "name": "Family debt",
         "weight": 10,
         "points": 25,
-        "details": "Lose 35% of household cash and work to replace it legitimately."
+        "details": "Lose 40% of household funds and earn it back without cheats."
       },
       {
         "id": "mis6",
-        "name": "Public Scandal",
+        "name": "Scandal",
         "weight": 10,
         "points": 20,
-        "details": "Experience a reputation or relationship setback naturally, if supported."
+        "details": "The heir does something embarrassing in public this week and lets the reputation drop."
       },
       {
         "id": "mis7",
-        "name": "A Dangerous Habit",
+        "name": "Bad habit",
         "weight": 7,
         "points": 25,
-        "details": "If the relevant mod is enabled, roleplay a problematic habit and its consequences."
+        "details": "Basemental: the heir picks up a habit and you play out what it does to them."
       },
       {
         "id": "mis8",
-        "name": "The Lost Fortune",
+        "name": "Lost fortune",
         "weight": 6,
         "points": 40,
-        "details": "Lose 60% of household cash; the heirloom box stays protected."
+        "details": "Lose 60% of household funds. The family box is never touched."
       }
-    ]
+    ],
+    "events": {
+      "uninvited": [
+        {
+          "id": "un1",
+          "name": "They keep a key",
+          "details": "For 14 Sim days you can't kick them out, lock them out or ask them to leave.",
+          "weight": 20,
+          "points": 15
+        },
+        {
+          "id": "un2",
+          "name": "Awkward",
+          "details": "The heir flirts with them at least once before they leave, even if it's a terrible idea.",
+          "weight": 15,
+          "points": 15
+        },
+        {
+          "id": "un3",
+          "name": "New enemy",
+          "details": "Pick a fight with them before they leave. The relationship has to end below 0.",
+          "weight": 15,
+          "points": 10
+        },
+        {
+          "id": "un4",
+          "name": "Houseguest",
+          "details": "They move in for 7 Sim days.",
+          "weight": 15,
+          "points": 20
+        },
+        {
+          "id": "un5",
+          "name": "You owe them",
+          "details": "Give them a gift worth at least §500.",
+          "weight": 15,
+          "points": 10
+        },
+        {
+          "id": "un6",
+          "name": "Lucky",
+          "details": "Nothing happens.",
+          "weight": 20,
+          "points": 0
+        }
+      ],
+      "romance": [
+        {
+          "id": "ro1",
+          "name": "Fast forward",
+          "details": "Move in together within 7 Sim days, or break up.",
+          "weight": 15,
+          "points": 15
+        },
+        {
+          "id": "ro2",
+          "name": "Secret affair",
+          "details": "No romantic interactions in public for 14 Sim days. If anyone catches them, it fails.",
+          "weight": 15,
+          "points": 20
+        },
+        {
+          "id": "ro3",
+          "name": "Meet the family",
+          "details": "They have to meet every living Hawthorne within 7 Sim days.",
+          "weight": 15,
+          "points": 10
+        },
+        {
+          "id": "ro4",
+          "name": "Bad timing",
+          "details": "Try for a baby within 3 Sim days. Whatever happens, happens.",
+          "weight": 10,
+          "points": 25
+        },
+        {
+          "id": "ro5",
+          "name": "Jealous ex",
+          "details": "Invite the most recent ex over with autonomy on and let it play out.",
+          "weight": 15,
+          "points": 15
+        },
+        {
+          "id": "ro6",
+          "name": "Lucky",
+          "details": "Nothing happens.",
+          "weight": 20,
+          "points": 0
+        }
+      ],
+      "pregnancy": [
+        {
+          "id": "pr1",
+          "name": "No prep",
+          "details": "No nursery or baby stuff until the day the baby is born.",
+          "weight": 20,
+          "points": 10
+        },
+        {
+          "id": "pr2",
+          "name": "Tell them",
+          "details": "Tell the other parent in person within 2 Sim days, whatever the relationship is.",
+          "weight": 20,
+          "points": 10
+        },
+        {
+          "id": "pr3",
+          "name": "Home birth",
+          "details": "The baby is born at home.",
+          "weight": 15,
+          "points": 15
+        },
+        {
+          "id": "pr4",
+          "name": "Random godparent",
+          "details": "The last Sim who visited becomes the godparent. They need 50+ friendship with the kid by toddler.",
+          "weight": 15,
+          "points": 20
+        },
+        {
+          "id": "pr5",
+          "name": "No leave",
+          "details": "Keep going to work until labour starts.",
+          "weight": 15,
+          "points": 15
+        },
+        {
+          "id": "pr6",
+          "name": "Lucky",
+          "details": "Nothing happens.",
+          "weight": 15,
+          "points": 0
+        }
+      ],
+      "breakup": [
+        {
+          "id": "br1",
+          "name": "Neighbours",
+          "details": "The ex moves into the same world.",
+          "weight": 20,
+          "points": 15
+        },
+        {
+          "id": "br2",
+          "name": "The kids choose",
+          "details": "The kids stay close to the ex (50+ friendship). Let it drop and it fails.",
+          "weight": 15,
+          "points": 20
+        },
+        {
+          "id": "br3",
+          "name": "Rebound",
+          "details": "Start a new romance within 7 Sim days.",
+          "weight": 15,
+          "points": 15
+        },
+        {
+          "id": "br4",
+          "name": "Alone",
+          "details": "No romance at all for a full season.",
+          "weight": 15,
+          "points": 20
+        },
+        {
+          "id": "br5",
+          "name": "Settlement",
+          "details": "Give the ex 25% of household funds.",
+          "weight": 15,
+          "points": 15
+        },
+        {
+          "id": "br6",
+          "name": "Lucky",
+          "details": "Nothing happens.",
+          "weight": 20,
+          "points": 0
+        }
+      ],
+      "death": [
+        {
+          "id": "de1",
+          "name": "Inheritance fight",
+          "details": "The heir and a relative become enemies over it.",
+          "weight": 15,
+          "points": 15
+        },
+        {
+          "id": "de2",
+          "name": "Grave duty",
+          "details": "The tombstone or urn stays at home. Mourn at it once per season.",
+          "weight": 20,
+          "points": 10
+        },
+        {
+          "id": "de3",
+          "name": "Taking them in",
+          "details": "Whoever lived with the dead Sim moves in with the heir if they'd be alone.",
+          "weight": 15,
+          "points": 20
+        },
+        {
+          "id": "de4",
+          "name": "Revenge",
+          "details": "If someone caused it, the heir makes them pay within 7 Sim days.",
+          "weight": 10,
+          "points": 25
+        },
+        {
+          "id": "de5",
+          "name": "Funeral",
+          "details": "Throw a funeral within 3 Sim days.",
+          "weight": 20,
+          "points": 10
+        },
+        {
+          "id": "de6",
+          "name": "Lucky",
+          "details": "Nothing happens.",
+          "weight": 20,
+          "points": 0
+        }
+      ],
+      "violence": [
+        {
+          "id": "vi1",
+          "name": "Grudge for life",
+          "details": "The relationship never goes above -50 again.",
+          "weight": 20,
+          "points": 15
+        },
+        {
+          "id": "vi2",
+          "name": "Get even",
+          "details": "Get revenge within 7 Sim days: a prank, a fight, or worse.",
+          "weight": 15,
+          "points": 20
+        },
+        {
+          "id": "vi3",
+          "name": "Gossip",
+          "details": "Someone saw it. The heir tells another Sim about it.",
+          "weight": 15,
+          "points": 10
+        },
+        {
+          "id": "vi4",
+          "name": "Make peace",
+          "details": "Become friends (50+) within one season.",
+          "weight": 15,
+          "points": 20
+        },
+        {
+          "id": "vi5",
+          "name": "Lie low",
+          "details": "The heir doesn't leave the lot for 3 Sim days.",
+          "weight": 15,
+          "points": 10
+        },
+        {
+          "id": "vi6",
+          "name": "Lucky",
+          "details": "Nothing happens.",
+          "weight": 20,
+          "points": 0
+        }
+      ],
+      "birthday": [
+        {
+          "id": "bi1",
+          "name": "Random trait",
+          "details": "Pick the next trait with a random picker. No rerolls.",
+          "weight": 20,
+          "points": 15
+        },
+        {
+          "id": "bi2",
+          "name": "New dream",
+          "details": "Switch to a random aspiration.",
+          "weight": 10,
+          "points": 25
+        },
+        {
+          "id": "bi3",
+          "name": "Party or sulk",
+          "details": "Throw a birthday party. Under silver and the heir skips social events for 7 Sim days.",
+          "weight": 15,
+          "points": 10
+        },
+        {
+          "id": "bi4",
+          "name": "Out the door",
+          "details": "Young adult or older: move out within 7 Sim days, into somewhere smaller.",
+          "weight": 15,
+          "points": 15
+        },
+        {
+          "id": "bi5",
+          "name": "Glow-up",
+          "details": "Completely new hair and style.",
+          "weight": 20,
+          "points": 5
+        },
+        {
+          "id": "bi6",
+          "name": "Lucky",
+          "details": "Nothing happens.",
+          "weight": 20,
+          "points": 0
+        }
+      ],
+      "season": [
+        {
+          "id": "se1",
+          "name": "Bad season",
+          "details": "Lose 10% of household funds.",
+          "weight": 15,
+          "points": 10
+        },
+        {
+          "id": "se2",
+          "name": "Family holiday",
+          "details": "Host a holiday for every living Hawthorne this season.",
+          "weight": 20,
+          "points": 10
+        },
+        {
+          "id": "se3",
+          "name": "Side hustle",
+          "details": "Gain 2 levels in a skill that isn't on this generation's list.",
+          "weight": 15,
+          "points": 15
+        },
+        {
+          "id": "se4",
+          "name": "Frozen budget",
+          "details": "No new furniture this season.",
+          "weight": 15,
+          "points": 15
+        },
+        {
+          "id": "se5",
+          "name": "Weekend guest",
+          "details": "A random townie stays over for a weekend.",
+          "weight": 15,
+          "points": 10
+        },
+        {
+          "id": "se6",
+          "name": "Lucky",
+          "details": "Nothing happens.",
+          "weight": 20,
+          "points": 0
+        }
+      ],
+      "money": [
+        {
+          "id": "mo1",
+          "name": "Easy come",
+          "details": "Spend half of it within 3 Sim days.",
+          "weight": 15,
+          "points": 10
+        },
+        {
+          "id": "mo2",
+          "name": "Generous",
+          "details": "Give 20% of it to a Sim outside the family.",
+          "weight": 15,
+          "points": 15
+        },
+        {
+          "id": "mo3",
+          "name": "Easy go",
+          "details": "Lose 25% of household funds.",
+          "weight": 15,
+          "points": 20
+        },
+        {
+          "id": "mo4",
+          "name": "All in",
+          "details": "Put all of it into the house or the business. Keep none in the bank.",
+          "weight": 15,
+          "points": 15
+        },
+        {
+          "id": "mo5",
+          "name": "Cheapskate",
+          "details": "Don't spend any of it for 14 Sim days.",
+          "weight": 15,
+          "points": 10
+        },
+        {
+          "id": "mo6",
+          "name": "Lucky",
+          "details": "Nothing happens.",
+          "weight": 25,
+          "points": 0
+        }
+      ],
+      "disaster": [
+        {
+          "id": "di1",
+          "name": "Do it yourself",
+          "details": "The heir fixes or rebuilds everything. No hiring anyone.",
+          "weight": 20,
+          "points": 15
+        },
+        {
+          "id": "di2",
+          "name": "Downsize",
+          "details": "Move somewhere smaller or remove a room.",
+          "weight": 10,
+          "points": 25
+        },
+        {
+          "id": "di3",
+          "name": "No insurance",
+          "details": "Spend nothing on replacing things for 7 Sim days.",
+          "weight": 20,
+          "points": 15
+        },
+        {
+          "id": "di4",
+          "name": "Blame someone",
+          "details": "The heir picks a fight with whoever was nearby.",
+          "weight": 15,
+          "points": 10
+        },
+        {
+          "id": "di5",
+          "name": "Lucky",
+          "details": "Nothing happens.",
+          "weight": 20,
+          "points": 0
+        }
+      ]
+    }
   },
   "fateHistory": [
     {
@@ -1371,8 +1896,8 @@ window.INITIAL_HAWTHORNE = {
       "personA": "Ivy Hawthorne",
       "personB": "Redmond Red",
       "kind": "Divorced",
-      "status": "Separated; no reconciliation arranged",
-      "notes": "Former married couple. Redmond left the family farm after Ivy flirted with Father Winter in front of him.",
+      "status": "Divorced, no contact",
+      "notes": "Redmond left the farm after Ivy flirted with Father Winter in front of him.",
       "day": ""
     },
     {
@@ -1381,8 +1906,8 @@ window.INITIAL_HAWTHORNE = {
       "personA": "Redmond Red",
       "personB": "Primrose Hawthorne",
       "kind": "Former stepfather and stepdaughter",
-      "status": "Fond relationship; current contact unknown",
-      "notes": "Redmond cared for Primrose and got along with her before the divorce. Do not assume he disappears from her life.",
+      "status": "Close. Haven't seen each other since the divorce",
+      "notes": "He raised her and she loved him. Keep him in her life if the game lets you.",
       "day": ""
     },
     {
@@ -1392,7 +1917,7 @@ window.INITIAL_HAWTHORNE = {
       "personB": "Primrose Hawthorne",
       "kind": "Biological father and daughter",
       "status": "Loving",
-      "notes": "Father Winter loves his daughter. Check the Father Winter’s Baby trait in game rather than adding supernatural powers.",
+      "notes": "He loves his daughter.",
       "day": ""
     },
     {
@@ -1401,8 +1926,8 @@ window.INITIAL_HAWTHORNE = {
       "personA": "Ivy Hawthorne",
       "personB": "Father Winter",
       "kind": "Biological co-parents; romantic involvement",
-      "status": "Flirted again during Ivy’s marriage",
-      "notes": "Their subsequent relationship status should be determined in gameplay, not presumed.",
+      "status": "Flirting again, nothing official",
+      "notes": "Flirted during the marriage. Where it goes from here is up to them.",
       "day": ""
     }
   ],
@@ -1415,7 +1940,7 @@ window.INITIAL_HAWTHORNE = {
       "source": "Marriage / household funds",
       "recipient": "Hawthorne household",
       "status": "Received",
-      "notes": "Significant amount, exact figure not recorded."
+      "notes": "A lot of money. Exact amount not written down."
     },
     {
       "id": "w-redmond-divorce",
@@ -1425,7 +1950,7 @@ window.INITIAL_HAWTHORNE = {
       "source": "Divorce / asset division",
       "recipient": "Redmond Red",
       "status": "Unresolved",
-      "notes": "The game moved Redmond out of the household. Do not fabricate a payout or housing arrangement."
+      "notes": "The game moved him out. No settlement paid yet."
     }
   ],
   "trips": [
@@ -1439,8 +1964,8 @@ window.INITIAL_HAWTHORNE = {
       "status": "Idea",
       "day": "",
       "traveler": "Primrose Hawthorne",
-      "activities": "Forest exploration, insect observation, art and nature journals, a friendship made away from home.",
-      "notes": "Custom Getaway: not a pre-made official trip."
+      "activities": "Exploring the woods, bug spotting, drawing in a nature journal, making a friend away from home.",
+      "notes": "Custom getaway."
     },
     {
       "id": "t-summer",
@@ -1452,7 +1977,7 @@ window.INITIAL_HAWTHORNE = {
       "status": "Idea",
       "day": "",
       "traveler": "Primrose Hawthorne",
-      "activities": "Swimming, games, campfires, friendships, counselors and independent decisions.",
+      "activities": "Swimming, games, campfires, counsellors, making her own choices.",
       "notes": "Custom Getaway."
     },
     {
@@ -1465,8 +1990,8 @@ window.INITIAL_HAWTHORNE = {
       "status": "Idea",
       "day": "",
       "traveler": "Primrose Hawthorne",
-      "activities": "Harvest, local history, farm animals, seasonal cooking and storytelling.",
-      "notes": "Alternative: mystery and folklore camp in Ravenwood."
+      "activities": "Harvest, local history, farm animals, seasonal cooking, stories.",
+      "notes": "Or a mystery and folklore camp in Ravenwood instead."
     },
     {
       "id": "t-winter",
@@ -1478,17 +2003,17 @@ window.INITIAL_HAWTHORNE = {
       "status": "Idea",
       "day": "",
       "traveler": "Primrose Hawthorne",
-      "activities": "Snow activities, sledding, lodge evenings, excursions and winter friendships.",
-      "notes": "Custom Getaway. Activities depend on owned packs and child access."
+      "activities": "Snow, sledding, evenings at the lodge, winter friends.",
+      "notes": "Custom getaway. What she can do depends on packs."
     }
   ],
   "storyHooks": [
     {
       "id": "hook-redmond",
       "generation": 1,
-      "title": "Redmond’s next chapter",
+      "title": "What happens to Redmond",
       "status": "Open",
-      "description": "Give Redmond a future determined by gameplay: separate home, possible settlement, continued contact with Primrose, new relationship, or no reconciliation. Do not assume outcome.",
+      "description": "Does he get a place of his own, see Primrose again, find someone new, get revenge, or come crawling back?",
       "notes": ""
     },
     {
@@ -1496,7 +2021,7 @@ window.INITIAL_HAWTHORNE = {
       "generation": 2,
       "title": "The shy Golden Child",
       "status": "Open",
-      "description": "Primrose is shy and grows up wealthy with family expectations, two loving father figures, and her mother’s divorce. Her own traits and experiences should define her story.",
+      "description": "Shy, rich, two dads, a mum who threw one of them out. Who she becomes depends on her traits and what happens to her.",
       "notes": ""
     },
     {
@@ -1504,16 +2029,27 @@ window.INITIAL_HAWTHORNE = {
       "generation": 3,
       "title": "Wildcard — choose a dark path",
       "status": "Idea",
-      "description": "Possible villain routes: cold recluse killer / dark horror; corrupt nightlife boss, gangs and drugs; or a violent, self-sabotaging failure. Keep routes optional until Generation III emerges naturally.",
-      "notes": "Mature modded gameplay, not mandatory objectives."
+      "description": "Options: a cold recluse killer (horror vibe), a nightlife boss with gangs and drugs, or a violent mess who sabotages everything. Decide once Gen 3 is born and shows who they are.",
+      "notes": "Uses my mods (Extreme Violence, Basemental)."
     },
     {
       "id": "hook-ranch",
       "generation": 4,
       "title": "Why the Wildcard’s heir chooses a ranch",
       "status": "Idea",
-      "description": "Possible motivations: escape from a criminal parent; use inherited wealth to start an honest estate; or genuine love of horses despite admiring the parent. Choose based on the child’s autonomous history.",
+      "description": "Why a ranch? Running away from a criminal parent, turning dirty money into an honest estate, or just loving horses while still looking up to the parent. Go with whatever their childhood was like.",
       "notes": ""
+    }
+  ],
+  "chaosLog": [],
+  "contracts": [
+    {
+      "id": "c-grim",
+      "name": "The Grim Reaper's child",
+      "generation": "",
+      "status": "Active",
+      "points": 60,
+      "description": "An heir has a biological child with the Grim Reaper. If that baby is the firstborn, it inherits."
     }
   ]
 };
